@@ -15,12 +15,6 @@ class Scenario {
         this.curva = undefined;
     }
 
-    renderPoint(vector3) {
-        let pointMaterial = new THREE.PointsMaterial({ size: 10, sizeAttenuation: false });
-        let pointGeometry = new THREE.BufferGeometry().setFromPoints([vector3]);
-        return new THREE.Points(pointGeometry, pointMaterial);
-    }
-
     configLighting() {
         var light = new THREE.SpotLight(0xffffff, 0.7);
         light.castShadow = true;
