@@ -21,7 +21,7 @@ class Scenario {
         return new THREE.Points(pointGeometry, pointMaterial);
     }
 
-    buildSpotlight() {
+    configLighting() {
         var light = new THREE.SpotLight(0xffffff, 0.7);
         light.castShadow = true;
         light.target.position.set(carro.position.x, carro.position.y, 0);
@@ -32,7 +32,7 @@ class Scenario {
         return light;
     }
 
-    buildBackgroundImage(imgPath) {
+    configBackgroundImage(imgPath) {
         let loader = new THREE.TextureLoader();
         let floorTexture = loader.load( imgPath );
         floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
@@ -47,7 +47,7 @@ class Scenario {
         return floor;
     }
 
-    buildSpline() {
+    configCurve() {
         return new THREE.SplineCurve([
             new THREE.Vector3(-1.4, 0.78, 0),
             new THREE.Vector3(-0.8, 0.9, 0),
