@@ -5,10 +5,6 @@ class Scenario {
             antialias: true
         });
         this.render.setSize(window.innerWidth, window.innerHeight);
-        this.render.setClearColor(0x101010);
-
-        this.render.shadowMap.enabled = true;
-        this.render.shadowMap.type = THREE.BasicShadowMap;
 
         this.canvas = this.render.domElement;
     }
