@@ -12,7 +12,6 @@ class Scenario {
     configBackgroundImage(imgPath) {
         let loader = new THREE.TextureLoader();
         let floorTexture = loader.load( imgPath );
-        floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping; 
 
         let floorGeometry = new THREE.PlaneGeometry(4.25, 2.1);
         let floorMaterial = new THREE.MeshBasicMaterial({
