@@ -29,7 +29,7 @@ cena.add(linha)
 let _ = new THREE.OrbitControls(cam, canvas)
 
 var car = new Car();
-var carro = car.build();
+var carro = car.configCar();
 cena.add(carro);
 
 var posicao = 0;
