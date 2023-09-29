@@ -11,8 +11,6 @@ class Scenario {
         this.render.shadowMap.type = THREE.BasicShadowMap;
 
         this.canvas = this.render.domElement;
-
-        this.curva = undefined;
     }
 
     configLighting() {
