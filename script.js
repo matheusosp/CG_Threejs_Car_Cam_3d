@@ -18,7 +18,7 @@ var curva = scenario.configCurve();
 var path = new THREE.Path(curva.getPoints(300));
 
 for (let p of curva.points) {
-    var ponto = scenario.buildPoint(p.x, p.y, p.z);
+    var ponto = scenario.configPoint(p.x, p.y, p.z);
     cena.add(ponto);
 }
 let lineGeometry = new THREE.BufferGeometry().setFromPoints(curva.getPoints(300));

@@ -61,7 +61,7 @@ class Scenario {
         ]);
     }
 
-    buildPoint(x, y, z) {
+    configPoint(x, y, z) {
         let materialPonto = new THREE.PointsMaterial({
             size: 10,
             sizeAttenuation: false
