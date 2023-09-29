@@ -12,9 +12,6 @@ document.body.appendChild(canvas);
 
 scene.background = new THREE.Color( 0xAACCFF );
 
-var luzAmbiente = new THREE.AmbientLight(0x333333);
-scene.add(luzAmbiente);
-
 var fundo = scenario.configBackgroundImage('background.png', 4.25, 2.1, 0);
 scene.add(fundo);
 
