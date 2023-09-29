@@ -9,17 +9,6 @@ class Scenario {
         this.canvas = this.render.domElement;
     }
 
-    configLighting() {
-        var light = new THREE.SpotLight(0xffffff, 0.7);
-        light.castShadow = true;
-        light.target.position.set(carro.position.x, carro.position.y, 0);
-        light.shadow.camera.near = 0.1;
-        light.shadow.camera.far = 10;
-        light.target = carro;
-        light.angle = 0.1;
-        return light;
-    }
-
     configBackgroundImage(imgPath) {
         let loader = new THREE.TextureLoader();
         let floorTexture = loader.load( imgPath );

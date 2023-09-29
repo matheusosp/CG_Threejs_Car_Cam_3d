@@ -38,7 +38,7 @@ scene.add(carro);
 
 var posicao = 0;
 var angulo = 0;
-var light = scenario.configLighting();
+var light = new THREE.SpotLight(0xffffff, 0.7);
 light.position.set(0.6, 0, 6);
 scene.add(light);
 
