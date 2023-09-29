@@ -12,7 +12,7 @@ document.body.appendChild(canvas);
 
 scene.background = new THREE.Color( 0xAACCFF );
 
-var fundo = scenario.configBackgroundImage('background.png', 4.25, 2.1, 0);
+var fundo = scenario.configBackgroundImage('background.png');
 scene.add(fundo);
 
 var curva = scenario.configCurve();
