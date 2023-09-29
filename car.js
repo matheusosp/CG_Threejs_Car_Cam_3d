@@ -17,7 +17,7 @@ class Car {
             posicao = 0.001;
         }
 
-        var ponto = caminho.getPointAt(posicao);
+        var ponto = path.getPointAt(posicao);
         carro.position.x = ponto.x;
         carro.position.y = ponto.y;
 
@@ -26,7 +26,7 @@ class Car {
     }
 
     getAngulo(posicao) {
-        var tangente = caminho.getTangent(posicao).normalize();
+        var tangente = path.getTangent(posicao).normalize();
         angulo = -Math.atan(tangente.x / tangente.y);
 
         return angulo;

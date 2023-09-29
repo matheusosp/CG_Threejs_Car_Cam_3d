@@ -15,7 +15,7 @@ var fundo = scenario.configBackgroundImage('background.png', 4.25, 2.1, 0);
 cena.add(fundo);
 
 var curva = scenario.configCurve();
-var caminho = new THREE.Path(curva.getPoints(300));
+var path = new THREE.Path(curva.getPoints(300));
 
 for (let p of curva.points) {
     var ponto = scenario.buildPoint(p.x, p.y, p.z);
